@@ -50,14 +50,25 @@ body {
    background-color: #e67e22;
    border-radius: 10%;
    font-size: 1.2rem;
+   
 }
 
 .icon {
     text-decoration: none;
 }
 
+.card-img-top {
+    min-height: 350px;
+}
+
 @media 
   (max-width: 520px) { 
+      /* .icons {
+          background-color: yellow !important;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      } */
 .order {
     margin-left: 160px;
     padding: 15px;
@@ -66,4 +77,5 @@ body {
     font-size: 50px;
 }
 }
+
 
