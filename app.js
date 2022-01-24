@@ -1,14 +1,27 @@
 const pizzaBtn = document.querySelector("#pizzaBtn");
 
-console.log("kkh", pizzaBtn);
-// const qty =
+let pizzaQty = 0;
+
+const pizzaDropdown = document.querySelector("#pizzaQty");
+
+pizzaDropdown.addEventListener("change", (e) => {
+  pizzaQty = e.target.value;
+});
 
 pizzaBtn.addEventListener("click", () => {
-  // alert('oououo')
-  if (localStorage.getItem("pizza")) {
-    localStorage.removeItem("pizzaQty");
-  }
+  localStorage.setItem("pizzaQty", pizzaQty);
+});
 
-  localStorage.setItem("pizzaQty", "5");
-  localStorage.setItem("test", JSON.stringify(19));
+const bibimbapBtn = document.querySelector("#bibimbapBtn");
+
+let bibimbapQty = 0;
+
+const bibimbapDropdown = document.querySelector("#bibimbapQty");
+
+bibimbapDropdown.addEventListener("change", (e) => {
+  bibimbapQty = e.target.value;
+});
+
+bibimbapBtn.addEventListener("click", () => {
+  localStorage.setItem("bibimbapQty", bibimbapQty);
 });
