@@ -26,6 +26,10 @@ body {
 .title2 {
   margin-top: 20px;
 }
+
+.herotitle {
+  color: #0c0601;
+}
 .order {
   margin-left: 30px;
   padding: 10px;
