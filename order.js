@@ -13,3 +13,11 @@ thalQty.innerHTML = localStorage.getItem("thalQty");
 const burgerQty = document.querySelector("#burgerQty");
 
 burgerQty.innerHTML = localStorage.getItem("burgerQty");
+
+const salmorejoQty = document.querySelector("#salmorejoQty");
+
+salmorejoQty.innerHTML = localStorage.getItem("salmorejoQty");
+
+const sushiQty = document.querySelector("#sushiQty");
+
+sushiQty.innerHTML = localStorage.getItem("sushiQty");
