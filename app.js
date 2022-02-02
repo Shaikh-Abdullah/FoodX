@@ -53,3 +53,32 @@ burgerDropdown.addEventListener("change", (e) => {
 burgerBtn.addEventListener("click", () => {
   localStorage.setItem("burgerQty", burgerQty);
 });
+
+const salmorejoBtn = document.querySelector("#salmorejoBtn");
+
+let salmorejoQty = 0;
+
+const salmorejoDropdown = document.querySelector("#salmorejoQty");
+
+salmorejoDropdown.addEventListener("change", (e) => {
+  salmorejoQty = e.target.value;
+});
+
+salmorejoBtn.addEventListener("click", () => {
+  console.log("kjghj");
+  localStorage.setItem("salmorejoQty", salmorejoQty);
+});
+
+const sushiBtn = document.querySelector("#sushiBtn");
+
+let sushiQty = 0;
+
+const sushiDropdown = document.querySelector("#sushiQty");
+
+sushiDropdown.addEventListener("change", (e) => {
+  sushiQty = e.target.value;
+});
+
+sushiBtn.addEventListener("click", () => {
+  localStorage.setItem("sushiQty", sushiQty);
+});
