@@ -65,7 +65,6 @@ salmorejoDropdown.addEventListener("change", (e) => {
 });
 
 salmorejoBtn.addEventListener("click", () => {
-  console.log("kjghj");
   localStorage.setItem("salmorejoQty", salmorejoQty);
 });
 
