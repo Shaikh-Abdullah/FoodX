@@ -1,3 +1,46 @@
+let userLink = document.getElementById("userlink");
+let signoutLink = document.getElementById("signoutlink");
+let currentUser = null;
+
+
+function getUserName() {
+  let keeploggedin = localStorage.getItem('keeploggedin')
+
+  if (keeploggedin === 'yes') {
+    currentUser = JSON.parse(localStorage.getItem('user'))
+  } else {
+    currentUser = JSON.parse(sessionStorage.getItem('user'))
+
+  }
+}
+
+function signout() {
+  sessionStorage.removeItem('user');
+  localStorage.removeItem('user');
+  localStorage.removeItem('keeploggedin');
+  window.location = "login.html";
+}
+
+window.onload = () => {
+  getUserName();
+  if (currentUser === null) {
+    signoutLink.innerText === "Login";
+    signoutLink.href === "login.html";
+    userLink.innerText = "Create New Account";
+    userLink.href = "register.html";
+
+  } else {
+
+    userLink.innerText = `Welcome ${currentUser.username}!!`;
+    userLink.classList.add('text-warning')
+    userLink.href = "#";
+
+    signoutLink.innerText === "SignOut";
+    signoutLink.href === "javascript:signout()";
+  }
+
+}
+
 const pizzaBtn = document.querySelector("#pizzaBtn");
 
 let pizzaQty = 0;
