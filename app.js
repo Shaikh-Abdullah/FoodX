@@ -26,10 +26,8 @@ window.onload = () => {
   if (currentUser === null) {
     signoutLink.innerText === "Login";
     signoutLink.href === "login.html";
-
     userLink.innerText = "Create New Account";
     userLink.href = "register.html";
-
 
   } else {
 
