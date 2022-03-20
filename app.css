@@ -11,6 +11,9 @@ body {
   color: #000;
 }
 
+.main {
+  color: #e67e22;
+}
 .hero {
   opacity: 0.7;
 }
