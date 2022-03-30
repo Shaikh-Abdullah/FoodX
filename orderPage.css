@@ -1,0 +1,12 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+.size {
+  font-weight: 600;
+  color: #000;
+}
+.background {
+  background: linear-gradient(#ecc67f, #fbd786);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
