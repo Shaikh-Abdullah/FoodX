@@ -12,3 +12,11 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+.center {
+  margin-left: 200px;
+}
+
+.down {
+  margin-top: 200px;
+}
