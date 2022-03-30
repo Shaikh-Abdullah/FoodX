@@ -15,6 +15,7 @@ function getUserName() {
 }
 
 function signout() {
+  console.log('SIGN OUT');
   sessionStorage.removeItem('user');
   localStorage.removeItem('user');
   localStorage.removeItem('keeploggedin');
@@ -31,12 +32,16 @@ window.onload = () => {
 
   } else {
 
-    userLink.innerText = `Welcome ${currentUser.username}!!`;
+    
+
+    userLink.innerText = `Welcome ${currentUser}!!`;
     userLink.classList.add('text-warning')
     userLink.href = "#";
 
     signoutLink.innerText === "SignOut";
-    signoutLink.href === "javascript:signout()";
+
+    
+    // signoutLink.href === "javascript:signout()";
   }
 
 }
