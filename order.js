@@ -30,31 +30,31 @@ const salmorejoPrice = document.querySelector("#salmorejoOrder");
 const sushiPrice = document.querySelector("#sushiOrder");
 
 function orderedItem() {
-  return localStorage.getItem("pizzaQty") * 500;
+  return localStorage.getItem("pizzaQty") * 250;
 }
 pizzaPrice.innerHTML = orderedItem();
 
 function orderedItemBibim() {
-  return localStorage.getItem("bibimbapQty") * 450;
+  return localStorage.getItem("bibimbapQty") * 250;
 }
 bibimbapPrice.innerHTML = orderedItemBibim();
 
 function orderedItemThal() {
-  return localStorage.getItem("thalQty") * 1600;
+  return localStorage.getItem("thalQty") * 500;
 }
 thalPrice.innerHTML = orderedItemThal();
 
 function orderedItemBurger() {
-  return localStorage.getItem("burgerQty") * 300;
+  return localStorage.getItem("burgerQty") * 250;
 }
 burgerPrice.innerHTML = orderedItemBurger();
 
 function orderedItemSalmorejo() {
-  return localStorage.getItem("salmorejoQty") * 1000;
+  return localStorage.getItem("salmorejoQty") * 500;
 }
 salmorejoPrice.innerHTML = orderedItemSalmorejo();
 
 function orderedItemSushi() {
-  return localStorage.getItem("sushiQty") * 315;
+  return localStorage.getItem("sushiQty") * 250;
 }
 sushiPrice.innerHTML = orderedItemSushi();
