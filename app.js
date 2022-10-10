@@ -2,7 +2,6 @@ let userLink = document.getElementById("userlink");
 let signoutLink = document.getElementById("signoutlink");
 let currentUser = null;
 
-
 function getUserName() {
   let keeploggedin = localStorage.getItem('keeploggedin')
 
